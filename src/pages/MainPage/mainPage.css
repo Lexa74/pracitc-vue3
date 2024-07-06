@@ -1,0 +1,13 @@
+.task {
+  color: red;
+}
+
+.task.active {
+  color: green;
+}
+
+.close {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
