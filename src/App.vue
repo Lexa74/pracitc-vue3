@@ -1,12 +1,15 @@
-<script setup lang="ts">
-import MainPage from "@/pages/MainPage/MainPage.vue";
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <MainPage />
+  <header>
+    <nav>
+      <RouterLink to="/home">Главная</RouterLink>
+      <RouterLink to="/about">О нас</RouterLink>
+      <RouterLink to="/contacts">Контакты</RouterLink>
+    </nav>
+  </header>
+
+  <RouterView />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

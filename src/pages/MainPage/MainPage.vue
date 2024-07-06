@@ -42,9 +42,11 @@ const onDelTask = (e: Event, id: number) => {
         v-for="{ id, title, completed } in tasks"
         :key="id"
       >
-        {{ title }} <span class="close" @click="(e) => onDelTask(e, id)">X</span>
+        <RouterLink :to="{ path: `/home/task/${id}` }"> {{ title }} </RouterLink>
+        <span class="close" @click="(e) => onDelTask(e, id)">X</span>
       </li>
     </ul>
+    <RouterView />
   </div>
 </template>
 
